@@ -2,4 +2,4 @@
 
 meu primeiro site.
 
-segunda..
+segunda.
