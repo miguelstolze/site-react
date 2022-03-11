@@ -1,13 +1,11 @@
 function Events({numero}){
-
-    function meuEvento(){
-        console.log(`opa, fui ativado ${numero}`)
+    function clicar(){
+        console.log(`Clicou no ${numero}`)
     }
-
     return(
         <div>
-            <p>Clique para disparar um evento:</p>
-            <button onClick={meuEvento}>Ativar:</button>
+            <h1>Clique para um evento:</h1>
+            <button onClick={clicar}>Clicar</button>
         </div>
     )
 }
