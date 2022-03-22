@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import HelloWorld from './componets/HelloWolrd';
-import Events from './componets/events';
-import Form from './componets/Form';
-
+import OutraLista from "./componets/outraLista";
+import Form from "./componets/Form";
 
 function App() {
+
+  const meusItens = ['React, Vue, Angular']
+  
   return (
-    <div className="App">
-    
-     <Form/>
+    <div>
+      <h1>Renderização de lista</h1>
+      <Form/>
+
     </div>
   );
 }
