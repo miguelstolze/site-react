@@ -1,16 +1,28 @@
-import OutraLista from "./componets/outraLista";
-import Form from "./componets/Form";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Empresa from "./pages/Empresa";
+import Contato from "./pages/Contato";
+import NavBar from "./componets/LayOut/NavBar";
+import Footer from "./componets/LayOut/footer";
 
 function App() {
-
-  const meusItens = ['React, Vue, Angular']
-  
   return (
-    <div>
-      <h1>Renderização de lista</h1>
-      <Form/>
-
-    </div>
+    
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          
+        </Route>
+        <Route path="/Empresa" element={<Empresa />}>
+        
+        </Route>
+        <Route path="/Contato" element={<Contato />}>
+         
+        </Route>
+      </Routes>
+      <Footer/>
+    </Router>
   );
 }
 
